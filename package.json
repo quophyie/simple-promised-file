@@ -1,7 +1,7 @@
 {
   "name": "@c8/simple-promised-file",
-  "version": "0.0.2",
-  "description": "A small prromise library with basic file functionality and promise-wrapped gm image module.",
+  "version": "0.0.3",
+  "description": "A small promise library with basic file functionality and promise-wrapped gm image module.",
   "main": "index.js",
   "directories": {
     "example": "examples",
