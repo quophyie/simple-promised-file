@@ -11,11 +11,14 @@
     "start": "node index.js",
     "test": "mocha"
   },
+  "engines": {
+    "node": "4.3.1"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/c8management/promised-file.git"
   },
-  "author": "Pavel Pichrt <pavel.pichrt@c8management.com>",
+  "author": "C8 MANAGEMENT LIMITED",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/c8management/promised-file/issues"
