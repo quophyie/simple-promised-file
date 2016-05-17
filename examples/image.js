@@ -1,19 +1,34 @@
 'use strict'
 
 const path = require('path')
-const image = require('../lib/image')
+const Image = require('../lib/image')
 
-image(path.join(__dirname, '1.jpg'))
+Image(path.join(__dirname, '1.txt'))
   .then((img) => {
     // We still have inherited File getters available
     console.log(img.size)
-    console.log(img.mime)
+
+    img.mime
+      .then((mime) => {
+        console.log(`Mime: ${mime}`)
+      })
+
+    img.isImage
+      .then((result) => {
+        console.log(`IsImage: ${result}`)
+      })
 
     // Async getters
     img
       .depth()
       .then((dim) => {
         console.log(dim)
+      })
+
+    // generate a unique name for a file
+    img.uniqueName
+      .then((name) => {
+        console.log(name)
       })
 
     // Image editing
