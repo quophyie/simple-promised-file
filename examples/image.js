@@ -3,33 +3,28 @@
 const path = require('path')
 const Image = require('../lib/image')
 
-Image(path.join(__dirname, '1.txt'))
+console.log(1)
+Image(path.join(__dirname, '1.jpg'))
   .then((img) => {
+    console.log(2)
     // We still have inherited File getters available
     console.log(img.size)
 
-    img.mime
-      .then((mime) => {
-        console.log(`Mime: ${mime}`)
-      })
+    console.log(img.extension)
 
-    img.isImage
-      .then((result) => {
-        console.log(`IsImage: ${result}`)
+    img.mime.then(console.log)
+    img.isImage.then(console.log)
+
+    img.dimensions()
+      .then((dimensions) => {
+        console.log(`Dimensions: ${dimensions.width}x${dimensions.height}px`)
       })
 
     // Async getters
-    img
-      .depth()
-      .then((dim) => {
-        console.log(dim)
-      })
+    img.depth().then(console.log)
 
     // generate a unique name for a file
-    img.uniqueName
-      .then((name) => {
-        console.log(name)
-      })
+    img.uniqueName.then(console.log)
 
     // Image editing
     return img
@@ -40,6 +35,4 @@ Image(path.join(__dirname, '1.txt'))
   .then(() => {
     console.log('edited')
   })
-  .catch((err) => {
-    console.log(err)
-  })
+  .catch(console.log)
