@@ -17,7 +17,7 @@ A small promise library with basic file functionality and promise-wrapped gm ima
 ```javascript
 'use strict'
 
-const PromisedFile = require('@c8/simple-promised-file').Image
+const PromisedFile = require('@c8/simple-promised-file')
 const File = PromisedFile.File
 const Image = PromisedFile.Image // extends PromisedFile.File with gm package image functionality
 ```
