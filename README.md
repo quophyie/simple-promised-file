@@ -11,7 +11,7 @@ A small promise library with basic file functionality and promise-wrapped gm ima
 
 ## Installation
 `npm i @c8/simple-promised-file`
-- requires either GraphicsMagic or ImageMagic
+- Image functions require either GraphicsMagic or ImageMagic
 
 ## Usage
 ```javascript
