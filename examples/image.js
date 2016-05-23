@@ -3,10 +3,8 @@
 const path = require('path')
 const Image = require('../lib/image')
 
-console.log(1)
 Image(path.join(__dirname, '1.jpg'))
   .then((img) => {
-    console.log(2)
     // We still have inherited File getters available
     console.log(img.size)
 

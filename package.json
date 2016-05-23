@@ -1,6 +1,6 @@
 {
   "name": "@c8/simple-promised-file",
-  "version": "0.0.21",
+  "version": "0.1.0",
   "description": "A small promise library with basic file functionality and promise-wrapped gm image module.",
   "main": "index.js",
   "directories": {
@@ -25,7 +25,7 @@
   },
   "homepage": "https://github.com/c8management/promised-file#readme",
   "dependencies": {
-    "@c8/errors": "0.0.1",
+    "@c8/errors": "0.0.8",
     "bluebird": "^3.4.0",
     "create-error": "^0.3.1",
     "file-type": "^3.8.0",
